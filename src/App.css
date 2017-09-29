@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C8C8C8;
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #623d8c;
+  color: #EDFFEC;
+  padding: 20px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.card {
+  background-color: #C8C8C8;
+  padding: 1em;
+  width: 100%;
+}
+
+.input-task {
+  background-color: inherit;
+  border-color: black;
+  border-style: solid;
+  border-width: 0 0 1px;
+  font-family: inherit;
+  margin: 1em auto;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.input-task:focus {
+  font-size: 1.5em;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.task-box {
+  background-color: #7570C1;
+  border-radius: 0.25rem;
+  color: #EDFFEC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em auto;
+  outline: none;
+  padding: 1em;
+  text-align: left;
+  vertical-align: center;
+  width: 100%;
+}
+
+.task-box:hover {
+  cursor: pointer;
+}
+
+.task-name {
+  flex: 2;
+  text-align: left;
+  margin: 0 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.todo {
+  order: 0;
+}
+
+.todo:hover {
+  background-color: #9792E3;
+}
+
+.done {
+  background-color: #555555;
+  order: 99;
+}
+
+.done > .task-name {
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 768px) and (min-device-width: 768px) {
+  .card {
+    margin: 1em auto;
+    width: 60%;
+  }
+
+  body {
+    background-color: #B3B3B3;
+  }
+}
