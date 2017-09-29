@@ -66,7 +66,7 @@ class ToDoList extends Component {
 
     return (
       <div className="card">
-        <h2>Example List</h2>
+        <h2>Things to do</h2>
         <AddTaskForm
           onSubmit={this.newTask}
         />
