@@ -45,7 +45,6 @@ class ToDoList extends Component {
     tasks[taskIndex].done = !tasks[taskIndex].done;
     this.setState({tasks: tasks});
     this.persistState();
-    console.log('i passed a thing');
   }
 
   handleDelete = (taskIndex) => {
@@ -57,8 +56,6 @@ class ToDoList extends Component {
   }
 
   persistState = () => {
-    console.log('wahey');
-    console.log(localStorage);
     localStorage.state = JSON.stringify(this.state);
   }
 
