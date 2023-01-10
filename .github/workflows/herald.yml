@@ -5,8 +5,8 @@ on:
     workflows: ["test-trigger"]
 
 jobs:
-  notify_of_failure:
-    name: Notify of failure
+  happen:
+    name: happen
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{github.event.workflow_run}}"
