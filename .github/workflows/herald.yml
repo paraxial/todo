@@ -9,7 +9,7 @@ jobs:
     name: happen
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{github.event.workflow_run}}"
+      - run: echo ${{github.event.workflow_run}}
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           WORKFLOW_RUN_EVENT: $github.event.workflow_run.event
