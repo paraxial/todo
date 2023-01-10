@@ -3,8 +3,6 @@ name: "herald tester"
 on:
   workflow_run:
     workflows: ["test-trigger"]
-    types: [completed]
-    branches: [main]
 
 jobs:
   notify_of_failure:
